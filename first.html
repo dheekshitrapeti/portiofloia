@@ -1,0 +1,26 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQUERY</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <!-- <p id="test">This is a paragraph1</p>
+    <p id="test">This is a paragraph2</p>-->
+    <p id="test">This is a paragraph3</p> 
+    <button onclick="hi()">click me</button>
+     <script>
+        // function hi(){
+        //     document.getElementById('test').style="color: red";
+        // }
+        //to load the conent completed we have to write as follows
+        $(document).ready(function(){
+        $('button').click(function(){
+           $("#test").css("color","red");
+            //$(this).hide();
+        });
+        });
+    </script>
+</body>
+</html>
